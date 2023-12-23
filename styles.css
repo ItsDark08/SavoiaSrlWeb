@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('OIP1.jpg');
+}
+/* Aggiunta di stili per le nuove immagini */
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 5px; /* Aggiunta di margine tra le immagini */
+}
+
+header, nav, section, footer {
+    background-color: rgba(255, 165, 0, 0.8); /* Arancione con un po' di trasparenza */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
