@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat;
     background-image: url('OIP1.jpg');
 }
+
 /* Aggiunta di stili per le nuove immagini */
 .image-container {
     text-align: center;
@@ -18,8 +19,26 @@ body {
     max-width: 100%;
     border-radius: 8px;
     margin: 5px; /* Aggiunta di margine tra le immagini */
+    position: relative;
 }
 
+.image-container img:hover + .hover-text {
+    opacity: 1;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Aggiunta di stili per gli elementi comuni (header, nav, section, footer) */
 header, nav, section, footer {
     background-color: rgba(255, 165, 0, 0.8); /* Arancione con un po' di trasparenza */
     color: #fff;
@@ -27,6 +46,7 @@ header, nav, section, footer {
     text-align: center;
 }
 
+/* Aggiunta di stili per la barra di navigazione */
 nav a {
     color: #fff;
     text-decoration: none;
@@ -37,6 +57,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Aggiunta di stili per la sezione */
 section {
     padding: 20px;
     margin: 20px;
@@ -44,6 +65,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Aggiunta di stili per la lista non ordinata */
 ul {
     list-style-type: none;
     padding: 0;
@@ -53,8 +75,29 @@ ul li {
     margin-bottom: 10px;
 }
 
+/* Aggiunta di stili per il footer */
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+/* Nel tuo file styles.css */
+.rounded-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Imposta l'altezza al 100% della viewport height (altezza della finestra del browser) */
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 100%; /* Puoi regolare questo valore come preferisci */
+    margin-top: 20px; /* Aggiunto margine per separare il video dal contenuto precedente */
+}
+
+.rounded-videos video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Copre completamente l'area del contenitore mantenendo le proporzioni del video */
+    border-radius: 10px; /* Angoli arrotondati */
+}
+
+
